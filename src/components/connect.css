@@ -1,0 +1,126 @@
+:root {
+    --main: #20835D;
+    --secondary: #ffffff;
+    --third: #daca3bff;
+    --sub-main: #216249ff;
+    --extra: #d9d9dd;
+    --less: #000000;
+
+    /* Transparant version */
+    --tpr-main: rgba(32, 131, 93, 0.55);
+    --tpr-sec: rgba(255, 255, 255, 1);
+    --tpr-third: rgba(218, 202, 59, 0.75);
+    --tpr-ss: rgba(33, 98, 73, 0.75);
+    --tpr-ex:rgba(217, 217, 221, 0.75);
+    --tpr-ls: rgba(0, 0, 0, 0.75);
+}
+
+/* Backgrounds */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.jpg {
+    background-image: url(../assets/fd_connexion.jpg);
+    background-size: cover;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    margin: 0 -360px;
+
+}
+
+/* to help crop the image viewed */
+.wraps {
+    width: 45vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* green background */
+#backboard {
+    background-color: var(--main);
+    width: 55vw;
+    height: 100vh;
+    position: absolute;
+    background-size: cover;
+    left: 45%;
+    display: flex;
+    justify-content: center;
+}
+
+
+h1 {
+    color: var(--third);
+    font-size: 3rem;
+    position: absolute;
+    top: 10%;
+}
+
+.context {
+    position: absolute;
+    top: 28%;
+    background-color: var(--sub-main);
+    width: 60%;
+    height: 50%;
+    z-index: 2;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem; 
+}
+
+
+form {
+    position: absolute;
+    display: grid;
+    gap: 2rem;
+    right: 38%;
+}
+
+label {
+    color: var(--secondary);
+    position: relative;
+    top: 140%;
+}
+
+input[type=text], textarea {
+    width: 150%;
+    height: 275%;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: var(--extra);
+}
+
+
+input[type=submit]{
+    position: relative;
+    top: 148%;
+    left: 34%;
+    width: 82%;
+    border-radius: 0.8rem;
+    border: 1px solid var(--less);
+    color: var(--secondary);
+    font-size: 1.2rem;
+    background-color: var(--third);
+    cursor: pointer;
+    padding: 0.655rem;
+}
+
+
+.phrase {
+    z-index: 2;
+    color: var(--secondary);
+    position: absolute;
+    top: 85%;
+    font-family: inter, serif;
+    font-size: 1.2rem;
+}
+
+#lien {
+    color: var(--secondary);
+}
