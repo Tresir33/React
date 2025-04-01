@@ -75,7 +75,7 @@ h1 {
 }
 
 
-form {
+.connect  {
     position: absolute;
     display: grid;
     gap: 2rem;

@@ -1,15 +1,14 @@
 import React from 'react'
 import boombox from '../assets/boombox.mp4'
-// import homepage from './homepage.css'
-import Header from './header';
+import homepage from './homepage.css'
+import Header from '../components/header';
 import Contact from './Contact'; 
 
 const Home = () => {
     return (
-        <div className='main'>
+        <div>
+            <div className='main'>
             <video src={boombox} autoPlay loop muted ></video>
-            <Header />
-            <div className='logo_1'>
                 <h1>Connectify</h1>
             </div>
 

@@ -12,7 +12,7 @@ function connexion() {
                 <div id='backboard'>
                     <h1>Connexion</h1>
                 <div className='context'>
-                <form>
+                <form className='connect'>
                     <label for="email">Email :</label>
                         <input type="text" id="email" name="email" placeholder="votre adresse e-mail.." />
 

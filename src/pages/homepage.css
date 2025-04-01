@@ -27,55 +27,11 @@
     z-index: 2;
 } */
 
-nav {
-    position: relative;
-    /* right: 25%; */
-    padding: 0.125rem;
-    /* width: 100%; */
-    z-index: 3;
-}
-nav ul {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 35%;
-    right: -55%;
-    z-index: 1;
-}
 
-nav li {
-    list-style-type: none;
+* {
+    margin: 0;
+    padding: 0;
 }
-
-nav li a {
-    color: var(--secondary);
-    text-decoration: none;
-    font-family: "inter", serif;
-    font-size: 1.563rem;
-}
-
-.yellow {
-    color: var(--third);
-}
-
-.btn-1 {
-    background: var(--tpr-main);
-    border-radius: 8px;
-    border: none;
-}
-
-#logo {
-    position: absolute;
-    font-weight: 600;
-    font-size: 2rem;
-    font-family: 'chicle', serif;
-    letter-spacing: 0.25rem;
-    top: 20%;
-    left: 5%;
-    z-index: 3;
-}
-
 
 /* Home */
 
@@ -83,7 +39,7 @@ nav li a {
     position: relative;
     width: 100%;
     height: 100vh;
-    right: 1%;
+    /* right: 2%; */
 }
 
 video {
@@ -92,10 +48,10 @@ video {
     height: 100vh;
     object-fit: cover;
     /* top: -3%; */
-    z-index: 1;
+    z-index: -1;
 }
 
-.logo_1 {
+/* .logo_1 {
     position: relative;
     width: 100%;
     height: 100%;
@@ -107,6 +63,17 @@ video {
     letter-spacing: 0.55rem;
     opacity: 80%;
     z-index: 3;
+} */
+
+.main h1 {
+    position: relative;
+    font-size: 12rem;
+    color: var(--third);
+    top: 34%;
+    font-family: "Gravitas One", serif;
+    font-weight: 900;
+    text-align: center;
+    opacity: 80%;
 }
 
 main {
@@ -127,6 +94,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    z-index: 2;
 }
 
 
@@ -282,7 +250,7 @@ h5 {
     padding: 3rem;
 }
 
-form {
+.contact {
     position: absolute;
     display: grid;
     gap: 1.6rem;

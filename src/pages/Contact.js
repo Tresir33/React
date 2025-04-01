@@ -8,7 +8,7 @@ import React from 'react';
             <div id='contact'>
                 <h5 id='h5' className='yellow'>Nous Contacter</h5>
             <div className='info'>
-                <form>
+                <form className='contact'>
                     <label for="email">Email</label>
                         <input type="view" id="email" name="email" placeholder="votre adresse e-mail.." />
 

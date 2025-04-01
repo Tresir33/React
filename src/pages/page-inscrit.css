@@ -70,7 +70,7 @@ h1 {
 }
 
 /* LIGNE 1 - NOM/PRENOM */
-.form .names {
+.form> .names {
     width: 100%;
     margin-top: 1.2rem;
 }

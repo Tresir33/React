@@ -1,22 +1,22 @@
 import React from 'react';
-import homepage from './homepage.css';
+import header from './header.css';
+import { Link } from 'react-router-dom';
 
 function Header() {
+
+
+
     return (
-        <div>
-            {/* <div id="standard"> */}
-                <nav >
-                        <div className='yellow' id='logo'>Connectify</div>
+                <nav className='nav'>
+                        <Link to="/" className='yellow' id='logo'>Connectify</Link>
                     <ul>
-                        <li><a href="/" className='yellow'>Accueil</a></li>
-                        <li><a href="/connexion">Connexion</a></li>
+                        <li><Link to="/" className='yellow'>Accueil</Link></li>
+                        <li><Link to="/connexion">Connexion</Link></li>
                         <button className='btn-1'>
-                            <li><a href="/inscription">Inscription</a></li>
+                            <li><Link to="/inscription">Inscription</Link></li>
                             </button>
                     </ul>
                 </nav>
-            {/* </div> */}
-        </div>
     );
 }
 

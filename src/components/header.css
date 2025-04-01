@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Chicle&family=Orbitron:wght@400..900&display=swap');
+
+:root {
+    --main: #20835D;
+    --secondary: #ffffff;
+    --third: #daca3bff;
+    --sub-main: #216249ff;
+    --extra: #d9d9dd;
+    --less: #000000;
+
+    /* Transparant version */
+    --tpr-main: rgba(32, 131, 93, 0.55);
+    --tpr-sec: rgba(255, 255, 255, 1);
+    --tpr-third: rgba(218, 202, 59, 0.75);
+    --tpr-ss: rgba(33, 98, 73, 0.75);
+    --tpr-ex:rgba(217, 217, 221, 0.75);
+    --tpr-ls: rgba(0, 0, 0, 0.75);
+}
+
+* {
+    box-sizing: border-box;
+    /* width: 100%; */
+}
+
+body {
+    margin: 0;
+}
+
+.nav {
+    position: absolute;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding: 3rem 6rem;
+    z-index: 3;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+#logo {
+    font-family: 'Chicle', cursive;
+    font-size: 5rem;
+    font-weight: 600;
+    color: var(--third);
+    text-decoration: none;
+    margin-top: -0%;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--secondary);
+    font-family: 'inter', serif;
+    font-size: 2.5rem;
+    padding: 0 0.5rem;
+}
+
+
+.btn-1 {
+    background: var(--tpr-main);
+    border-radius: 6px;
+    border: none;
+}
+
+
+@media only screen and (max-width: 428px) {
+    .nav {
+        padding: 0 3rem;
+    }
+
+    #logo {
+        font-size: 2rem;
+        margin-top: -1%;
+    }
+
+    nav a {
+        font-size: 1.2rem;
+    }
+    
+}
