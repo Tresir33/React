@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Chicle&family=Orbitron:wght@400..900&display=swap');
+
+:root {
+    --main: #20835D;
+    --secondary: #ffffff;
+    --third: #daca3bff;
+    --sub-main: #216249ff;
+    --extra: #d9d9dd;
+    --less: #000000;
+
+    /* Transparant version */
+    --tpr-main: rgba(32, 131, 93, 0.55);
+    --tpr-sec: rgba(255, 255, 255, 1);
+    --tpr-third: rgba(218, 202, 59, 0.75);
+    --tpr-ss: rgba(33, 98, 73, 0.75);
+    --tpr-ex:rgba(217, 217, 221, 0.75);
+    --tpr-ls: rgba(0, 0, 0, 0.75);
+}
+
+.log-in {
+    position: relative;
+    background-color: var(--main);
+    width: 100%;
+    height: 20vh;
+}
+
+#crop {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    overflow: hidden;
+    top: 100%;
+}
+
+.image {
+    background-image: url(../assets/banner_profil.png);
+    background-size: cover;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: -100%;
+}
+
+.profile {
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    left: 5%;
+    top: 144%;
+    padding: 20px;
+    width: 90%;
+    background: rgba(255, 255, 255, 0.2);
+    /* backdrop-filter: blur(5px); */
+}
+
+.pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 0 8rem;
+    object-fit: cover;
+}
+
+.sur_name {
+    display: flex;
+    flex-direction: row;
+    gap: 14rem;
+    padding: 2rem;
+    /* margin: 0 10%; */
+}
+
+.na {
+    font-family: 'inter', serif;
+    font-size: 4rem;
+    color: var(--secondary);
+}
+
